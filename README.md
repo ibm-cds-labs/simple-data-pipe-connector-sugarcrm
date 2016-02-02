@@ -1,6 +1,6 @@
 # Simple Data Pipe Connector for SugarCRM
 
-##### [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for [SugarCRM](http://www.sugarcrm.com/)
+[Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for [SugarCRM](http://www.sugarcrm.com/).
 
 ### Pre-requisites
 
@@ -38,7 +38,7 @@ Before the Simple Data Pipe can connect to SugarCRM, complete these steps:
 
 #### License 
 
-Copyright [2015-2016] [IBM Cloud Data Services]
+Copyright [2015-2016] IBM Cloud Data Services
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
