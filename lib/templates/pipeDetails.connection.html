@@ -44,13 +44,14 @@
 
       <div class="form_field" ng-class="{'has-error':!pipeConnectionForm.siteUrl.$pristine && pipeConnectionForm.siteUrl.$invalid}">
           <label for="siteUrl" class="form_label">Site url</label>
-          <input type="url" class="input_text input_wide" name="siteUrl" id="siteUrl" required ng-model="selectedPipe.siteUrl" placeholder="{{!pipeConnectionForm.clientSecret.$pristine && pipeConnectionForm.clientSecret.$invalid ? 'SugarCRM site url is required' : 'http://127.0.0.1:80/sugarcrm'}}">
+          <input type="url" class="input_text input_wide" name="siteUrl" id="siteUrl" required ng-model="selectedPipe.siteUrl" placeholder="{{!pipeConnectionForm.siteUrl.$pristine && pipeConnectionForm.siteUrl.$invalid ? 'SugarCRM site url is required' : 'http://127.0.0.1:80/sugarcrm'}}">
       </div>
       
       <div class="button_group">
         <button type="button" class="button_primary" ng-class="{'disabled':connectingpipe || pipeConnectionForm.$invalid}"
             ng-click="connectingpipe = true;savePipe({connect:true})"
-            ng-disabled="connectingpipe || pipeConnectionForm.$invalid">{{ connectingpipe ? 'Connecting...' : 'Connect to'+selectedConnector.label }}</button>
+            ng-disabled="connectingpipe || pipeConnectionForm.$invalid">{{ connectingpipe ? 'Connecting...' : 'Connect to '+selectedConnector.label }}</button>
+        <p class="type_copy" ng-if="connectingpipe">Redirecting to {{selectedPipe.siteUrl}}. Please wait...</p>
       </div>
     </form>
 
