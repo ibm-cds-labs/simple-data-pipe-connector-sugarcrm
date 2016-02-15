@@ -2,6 +2,10 @@
 
 [Simple Data Pipe](https://developer.ibm.com/clouddataservices/simple-data-pipe/) connector for [SugarCRM](http://www.sugarcrm.com/).
 
+This connector uses the [SugarCRM REST API v4](http://support.sugarcrm.com/Documentation/Sugar_Developer/Sugar_Developer_Guide_7.6/API/Web_Services/API_Versioning/) to fetch data and stores it in Cloudant using the [Simple Data Pipe SDK](https://github.com/ibm-cds-labs/simple-data-pipe-sdk). No data enrichment is performed.
+
+Need to load data from other sources? Check out the [connector repository](https://developer.ibm.com/clouddataservices/simple-data-pipe-connectors/).
+
 ### Pre-requisites
 
 ##### General 
