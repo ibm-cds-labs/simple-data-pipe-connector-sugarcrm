@@ -23,7 +23,7 @@
 	 "lodash": "~3.9.3",
 	 "node-schedule": "~0.2.9",
 	 "oauth": "0.9.10",
-   "simple-data-pipe-sdk": "^0.2.0",
+   "simple-data-pipe-sdk": "^0.2.4",
 	 "request": "^2.67.0",
 	 "when": "~3.7.3"
   },
